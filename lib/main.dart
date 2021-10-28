@@ -38,6 +38,10 @@ class _MagicState extends State<Magic> {
   Widget build(BuildContext context) {
     return Center(
       child: TextButton(
+        style: ButtonStyle(
+          overlayColor: MaterialStateProperty.all(Colors.transparent),
+        ),
+
         onPressed: (){
           setState(() {
             changeNumber();
